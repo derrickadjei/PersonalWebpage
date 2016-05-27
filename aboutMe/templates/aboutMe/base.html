@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}PersonalWebpage{% endblock %}</title>
+    <!-- Loads the path to your static files-->
+{% load staticfiles %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="test/css" href=" {% static 'aboutMe/styles.css' %}"/>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container_fluid">
+
+        <!-- Header-->
+        <div class=" navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa navbar-brand" href="{% url 'aboutMe:index' %}">Personal Website</a>
+        </div>
+
+        <!-- Items -->
+        <div class="collapse navbar-collapse" id="topNavBar">
+            <ul class="nav navbar-nav">
+                <li><a class="nav-link" href="#">About Me</a></li>
+                <li><a class="nav-link" href="{% url 'aboutMe:resume' %}">&nbsp;Resume</a></li>
+                <li><a class="nav-link" herf="#">&nbsp; Blog</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{% block body %}
+{% endblock %}
+</body>
+</html>

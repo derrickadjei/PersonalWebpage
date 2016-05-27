@@ -1,0 +1,75 @@
+
+
+body{
+
+    background: lightgray;
+    /*background: -webkit-linear-gradient(top, grey 30%, white 30%);*/
+
+}
+
+
+
+
+div.image{
+
+    content: url("images/me.jpg");
+    width: 230px;
+    height: 320px;
+    display: block;
+    margin: 0 auto;
+    border: solid white 10px;
+
+}
+
+div.large-title-block{
+
+    text-align: center;
+
+
+
+}
+
+
+div.text-container{
+   /* text-align: center;*/
+    /*margin-bottom: 15px;*/
+    border-radius: 15px;
+    background: white;
+    /*padding: 20px 25px;*/
+    width: 480px;
+    text-align:center;
+	padding:25px 0;
+	margin: 0 auto;
+}
+
+.jumbotron{
+
+    background-color: indianred;
+    margin-bottom: 0%;
+}
+
+.navbar{
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0%;
+    border-radius: 0;
+    background-color: #2d3538;
+
+}
+
+.navbar .nav > li > a{
+    color: white;
+    font-family: 'Indie Flower', cursive;
+}
+
+.navbar .nav > li > a:hover{
+    color: #666;
+}
+
+.navbar .navbar-brand{
+    color: white;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+
