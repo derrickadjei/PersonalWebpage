@@ -2,19 +2,22 @@
 
 body{
 
-    background: lightgray;
+    background: white;
+    border: solid white 3px;
     /*background: -webkit-linear-gradient(top, grey 30%, white 30%);*/
 
 }
 
-
+body.bod{
+    background: yellow;
+}
 
 
 div.image{
 
-    content: url("images/me.jpg");
-    width: 230px;
-    height: 320px;
+    content: url("images/me2.jpg");
+    width: 330px;
+    height: 430px;
     display: block;
     margin: 0 auto;
     border: solid white 10px;
@@ -22,11 +25,7 @@ div.image{
 }
 
 div.large-title-block{
-
     text-align: center;
-
-
-
 }
 
 
@@ -43,33 +42,59 @@ div.text-container{
 }
 
 .jumbotron{
-
-    background-color: indianred;
-    margin-bottom: 0%;
+    background-color: darkgrey;
 }
 
 .navbar{
     border: none;
     box-shadow: none;
-    margin-bottom: 0%;
+    margin-bottom: 0;
     border-radius: 0;
-    background-color: #2d3538;
+    background-color: lightgrey;
+    height: 200px;
+
+}
+
+div.container_fluid{
+
+    padding-left: 480px;
+    padding-top: 100px;
 
 }
 
 .navbar .nav > li > a{
     color: white;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Lato', sans-serif;
+    font-size: 200%;
+    text-decoration: underline;
 }
 
 .navbar .nav > li > a:hover{
     color: #666;
 }
 
-.navbar .navbar-brand{
-    color: white;
-    font-family: 'Indie Flower', cursive;
+div.col-sm-12 {
+
+    font-family: 'Lato', sans-serif;
+}
+div.col-sm-6 {
+
+    font-family: 'Lato', sans-serif;
+}
+footer.footer{
+    text-align: center;
+}
+
+
+/*Resume*/
+
+h1.name{
+    text-align: center;
 
 }
 
+h3{
+    text-decoration: underline;
+    text-align: center;
+}
 
